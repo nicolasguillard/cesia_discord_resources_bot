@@ -68,3 +68,30 @@ const rest = new REST().setToken(token);
 		console.error(error);
 	}
 })();
+
+
+// Managing event listeners
+const eventsPath = path.join(__dirname, 'events');
+const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+
+for (const file of eventFiles) {
+	const filePath = path.join(eventsPath, file);
+	const {eventHandler} = await import(filePath);
+	
+	//console.log(eventHandler);
+	if ("name" in eventHandler && "execute" in eventHandler) {
+		console.log(`event handler ${eventHandler.name}`);
+
+		if (eventHandler.once) {
+			client.once(eventHandler.name, (...args) => eventHandler.execute(...args));
+		} else {
+			client.on(eventHandler.name, (...args) => eventHandler.execute(...args));
+		}
+	} else {
+		console.log(`[WARNING] The event handler at ${filePath} is missing a required "name" or "execute" property.`);
+	}
+}
+
+
+// Log in to Discord with your client's token
+client.login(token);
