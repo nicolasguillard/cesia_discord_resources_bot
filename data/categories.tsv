@@ -1,7 +1,8 @@
-title	lang	thumbnail	color
-Général		https://drive.usercontent.google.com/download?id=1urZPUUo7rHbhLjye8kzFmAx6hTThbWRh	#DFFF00
-Gouvernance		https://drive.usercontent.google.com/download?id=1RGIKls9RB1d4dBfXfg8rP73P6odHCGhi	#FFBF00
-Alignement		https://drive.usercontent.google.com/download?id=190JfT8wJdeq-52WavLLYdiCcMOqkZhy_	#FF7F50
-Risques		https://drive.usercontent.google.com/download?id=1oPkefuKPsQHkojni7en4a14HsVga6PEj	#DE3163
-Cybersécurité		https://drive.usercontent.google.com/download?id=1kP5jkIvtOLHMB-DGL3gC0ivKDSXlvTnB	#9FE2BF
-Intelligence Artificielle		https://drive.usercontent.google.com/download?id=1WJKXfvGWbsTGbeVA6JBlTifQ6Mx2J6fN	#40E0D0
+title	lang	thumbnail	color	description
+CeSIA		https://drive.usercontent.google.com/download?id=1SSXfzhJ03ZUMp-anrR2_oEPQWSoR0O1P	#00609D	Liste de ressources mises en avant par le CeSIA
+Général		https://drive.usercontent.google.com/download?id=1urZPUUo7rHbhLjye8kzFmAx6hTThbWRh	#DFFF00	Liste de ressources traitant globalement de la sécurité de l'IA
+Gouvernance		https://drive.usercontent.google.com/download?id=1RGIKls9RB1d4dBfXfg8rP73P6odHCGhi	#FFBF00	Liste de ressources traitant des sujets de gouvernance
+Alignement		https://drive.usercontent.google.com/download?id=190JfT8wJdeq-52WavLLYdiCcMOqkZhy_	#FF7F50	Liste de ressources portant sur les problèmes d'alignement
+Risques		https://drive.usercontent.google.com/download?id=1oPkefuKPsQHkojni7en4a14HsVga6PEj	#DE3163	Liste de ressources consacrées aux risques de l'IA
+Cybersécurité		https://drive.usercontent.google.com/download?id=1kP5jkIvtOLHMB-DGL3gC0ivKDSXlvTnB	#9FE2BF	Liste de ressources traitant de la cybersécurité liée à l'IA
+Intelligence Artificielle		https://drive.usercontent.google.com/download?id=1WJKXfvGWbsTGbeVA6JBlTifQ6Mx2J6fN	#40E0D0	Liste de ressources portant sur la discipline IA (apprentissage profond, par renforcement, ...)
