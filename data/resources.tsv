@@ -46,7 +46,7 @@ Risques	Articles	EN	(+++)	PDF	An Empirical Evaluation of LLMs for Solving Offens
 Risques	Articles	EN	(+++)	PDF	LLM Agents can Autonomously Hack Websites - Par Daniel Kang and al.	https://arxiv.org/abs/2402.06664v1	
 Risques	Articles	EN	(+++)	Texte (html)	On the Conversational Persuasiveness of Large Language Models: A Randomized Controlled Trial - Par Francesco Salvi and al.	https://arxiv.org/abs/2403.14380	
 Risques	Blogs	FR	(+)	Texte (html)	Blog de Yoshua Bengio - Par Yoshua Bengio	https://yoshuabengio.org/fr/	
-Risques	Contenus	FR	(+)	Texte (html)	Panorama des Risques liés à l’IA - Par CeSIA	https://www.securite-ia.fr/panorama	
+Risques	Contenus	FR	(+)	Texte (html)	Panorama des risques liés à l’IA - Par CeSIA	https://www.securite-ia.fr/panorama	
 Risques	Contenus	EN	(+)	Texte (html)	Preventing an AI-related catastrophe - Par Benjamin Hilton and al.	https://80000hours.org/problem-profiles/artificial-intelligence/	
 Risques	Cours	FR	(+)	Vidéo	FB - Securité des IAs - Par SEM DIP Genère	https://www.youtube.com/playlist?list=PLziC9ALSenVtejpIhYlKQpFxaCSGEQx3j 	
 Risques	Cours	FR	(+)	Vidéo	Les biais et limites de l'IA génératives - Par SEM DIP Genère	https://www.youtube.com/watch?v=-RZDJ4x0L4A 	
@@ -57,3 +57,7 @@ Risques	Rapports	EN	(+)	Interactif (html)	AI Incidents Monitor (AIM) - Par OECD	
 Risques	Rapports	EN	(+)	Texte (html)	International Scientific Report on the Safety of Advanced AI	https://www.gov.uk/government/publications/international-scientific-report-on-the-safety-of-advanced-ai	
 Risques	Rapports	EN	(+)	PDF	Managing Misuse Risk for Dual-Use Foundation Models - Par NIST	https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd.pdf	
 Risques	Sites web	EN	(++)	Texte (html)	AI Risk Repository - Par MIT	https://airisk.mit.edu/	
+Intelligence Artificielle	Cours	FR	(+)	Texte (html)	Eléments d'IA - Par Université d'Helsinki - MinnaLearn - Sorbonne Université	https://www.elementsofai.fr/	
+Intelligence Artificielle	Cours	FR	(+)	-Multiples-	L'Intelligence Artificielle... avec intelligence ! - Par FUN MOOC	https://www.fun-mooc.fr/fr/cours/lintelligence-artificielle-avec-intelligence/	
+Intelligence Artificielle	Présentations	EN	(+)	Vidéo	Tout regarder Neural networks - Par 3Blue1Brown	https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi	
+Gouvernance	Sites web	EN	(+)	Texte (html)	European Networks for AI Safety - Par ENAIS	https://www.enais.co/	

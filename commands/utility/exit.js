@@ -8,14 +8,19 @@ export const command = {
 		.setName('exit')
 		.setDescription('Exit bot!'),
 	async execute(interaction) {
-        const { token, clientId, guildId } = getIds();
+        const { token, clientId } = getIds();
 
         const rest = new REST().setToken(token);
 
         rest.put(Routes.applicationCommands(clientId), { body: [] })
-            .then(() => console.log('Successfully deleted all application commands.'))
-            .catch(console.error);
-		await interaction.reply('Exit!');
-        process.exit(-1);
+            .then(async () => {
+                console.log('Successfully deleted all application commands.');
+                await interaction.reply({ content: 'Commands deleted and Bot shut down!', ephemeral: true });
+                process.exit(-1);
+            })
+            .catch(async (error) => {
+                console.error(error)
+                await interaction.reply({ content: 'Error with exiting!', ephemeral: true });
+            });	
 	}
 };
