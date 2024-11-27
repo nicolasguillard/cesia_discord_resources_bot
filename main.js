@@ -5,7 +5,7 @@ import path from "node:path"
 import dotenv from "dotenv";
 dotenv.config();
 
-import { getIds } from "./utils/helpers.js";
+import { getIds, serverName } from "./utils/helpers.js";
 
 const { token, clientId, guildId } = getIds();
 
@@ -92,6 +92,13 @@ for (const file of eventFiles) {
 	}
 }
 
-
 // Log in to Discord with your client's token
-client.login(token);
+console.log(`Don't forget to add your bot/app to the server ${serverName()}`);
+client.login(token)
+	.then(() => {
+		console.log(`Connected to the server ${serverName()}`);
+	})
+	.catch(error => {
+		console.log(`Be sure to add your bot/app to the server ${serverName()}`);
+		console.error(error);
+	});

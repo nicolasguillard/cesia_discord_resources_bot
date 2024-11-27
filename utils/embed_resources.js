@@ -1,7 +1,9 @@
 import {
+    CATEGORY_TITLE_ATTRIBUT, CATEGORY_DESCRIPTION_ATTRIBUT,
+    CATEGORY_THUMBNAIL_ATTRIBUT,CATEGORY_COLOR_ATTRIBUT,
     RESOURCE_TITLE_ATTRIBUT, RESOURCE_URL_ATTRIBUT,
     DEFAULT_CATEGORY_DESC, RESOURCE_LANG_ATTRIBUT,
-    RESOURCE_ACCESS_ATTRIBUT, RESOURCE_FORMAT_ATTRIBUT
+    //RESOURCE_ACCESS_ATTRIBUT, RESOURCE_FORMAT_ATTRIBUT
 } from './resources.js';
 import { EmbedBuilder } from 'discord.js';
 
@@ -19,6 +21,8 @@ const Type_emojis = {
     "Livres": ":books:",
     "Codes": ":keyboard:",
     "eBooks": ":notebook:",
+    "Débats": ":handshake:",
+    "Interview": ":microphone2:"
 };
 const Flag_emojis = {
     "FR": ":flag_fr:",
@@ -64,7 +68,7 @@ export function getAuthor(name, iconURL, url) {
 }
 
 export function getCategoryEmbed(
-    title, description, color, thumbnail, types, timestamp=true, author=null
+    title, description, color, thumbnail, resource_types, timestamp=true, author=null
 ) {
     const embed = new EmbedBuilder()
         .setColor(color)
@@ -73,7 +77,7 @@ export function getCategoryEmbed(
         .setThumbnail(thumbnail)
         .setFooter({text: "Last update :"});
 
-    types.forEach(type => {
+    resource_types.forEach(type => {
         const resource_list = type["resources"].map( resource => (
             Format.resource(resource)
         ));
@@ -98,11 +102,11 @@ export function getCategoryEmbed(
 export function getEmbeds(resourcesByCateg, timestamp=true, author=null) {
     return resourcesByCateg.map( category => {
         return getCategoryEmbed(
-            category.category.title,
-            "",
-            category.category.color,
-            category.category.thumbnail,
-            category.types,
+            category.category[CATEGORY_TITLE_ATTRIBUT],
+            category.category[CATEGORY_DESCRIPTION_ATTRIBUT],
+            category.category[CATEGORY_COLOR_ATTRIBUT],
+            category.category[CATEGORY_THUMBNAIL_ATTRIBUT],
+            category.resource_types,
             timestamp,
             author
         );

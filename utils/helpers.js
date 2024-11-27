@@ -14,3 +14,7 @@ export function getIds() {
 
     return {token, clientId, guildId, botName};
 }
+
+export function serverName() {
+    return process.env.serverName;
+}

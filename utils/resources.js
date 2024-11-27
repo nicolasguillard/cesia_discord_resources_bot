@@ -1,10 +1,14 @@
 import process from "node:process";
 import path from "node:path";
-import util from "node:util"
+//import util from "node:util"
 
 import { readFile } from "./helpers.js";
 
 export const CATEGORY_TITLE_ATTRIBUT = "title";
+export const CATEGORY_DESCRIPTION_ATTRIBUT = "description";
+export const CATEGORY_COLOR_ATTRIBUT = "color";
+export const CATEGORY_THUMBNAIL_ATTRIBUT = "thumbnail";
+
 export const RESOURCE_CATEGORY_ATTRIBUT = "Thème";
 export const RESOURCE_TYPE_ATTRIBUT = "Type";
 export const RESOURCE_TITLE_ATTRIBUT = "Titre";
@@ -78,6 +82,6 @@ export function getOrderedResources(categories=null, resources=null) {
         });
         //console.debug(util.inspect(types, {depth: null, colors: true}));
 
-        return {category, types};
+        return {category, "resource_types": types};
     });
 }
