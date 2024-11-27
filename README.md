@@ -20,6 +20,8 @@
 2. __On Discord__ :
     1. Add the bot to Discord server with the invite link.
     2. Choose the targeted channel.
-    3. Use `/resources` bot's command to update des embeded lists. Use `/removeall` command to remove all messages nesting an embed in order to clean the channel.
-    4. (optional) Remove added slash commands with `/exit` command if necessary.
-    5. Kick the bot.
+    3. Check the the permission "send messages" is fiven. If no permission, set to Yes.
+    4. Use `/resources` bot's command to update des embeded lists. Use `/removeall` command to remove all messages nesting an embed in order to clean the channel.
+    5. (optional) Remove added slash commands with `/exit` command if necessary.
+    6. Kick the bot.
+    7. Set back the updated permission to its previous value (step 3).
